@@ -118,9 +118,11 @@
                     </a>
                 </div>
 
+                <!-- Stats Section -->
                 <div class="mt-12 flex gap-12 text-slate-500 border-t border-white/10 pt-6">
                     <div>
-                        <span class="block text-3xl font-bold text-white">4+</span>
+                        <!-- ID added here for the script -->
+                        <span id="exp-years" class="block text-3xl font-bold text-white">--</span>
                         <span class="text-sm uppercase tracking-wide">Years Exp</span>
                     </div>
                     <div>
@@ -416,5 +418,22 @@
     <script>
         AOS.init({ once: true, offset: 50, duration: 800 });
     </script>
+    <script>
+    // Dynamic Experience Calculator
+    function updateExperience() {
+        const startDate = new Date('2021-08-09'); // Your start date: August 2021
+        const currentDate = new Date();
+        
+        // Calculate difference in years including decimal (for precision)
+        const diffInMilliseconds = currentDate - startDate;
+        const years = diffInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
+        
+        // Display with 1 decimal place (e.g., "4.3")
+        document.getElementById('exp-years').innerText = years.toFixed(2) + "+";
+    }
+    
+    // Run immediately
+    updateExperience();
+</script>
 </body>
 </html>
