@@ -2,7 +2,7 @@
 
 A personal portfolio website showcasing my work as a **Senior Data Scientist** and **GenAI Solutions Architect**.
 
-**Live Site:** [https://saroj-shah.github.io/](https://saroj-shah.github.io/sarojsah.github.io/)
+**Live Site:** [https://saroj-shah.github.io/](https://saroj-shah.github.io/)
 
 ![Portfolio Preview](screenshot.png) 
 
